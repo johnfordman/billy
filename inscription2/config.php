@@ -1,6 +1,7 @@
 <?php
-//On demarre les sessions
 session_start();
+//On demarre les sessions
+
 
 /******************************************************
 ----------------Configuration Obligatoire--------------
@@ -11,7 +12,7 @@ espace membre puisse fonctionner correctement.
 //On se connecte a la base de donnee
 
 try {
-    $db = new mysqli( 'localhost', 'root', 'root', 'enigmhetix' );
+    $db = new mysqli( 'localhost', 'root', 'root', 'exo' );
 } catch (mysqli_sql_exception $e) {
     die('Probleme de connexion');
 }

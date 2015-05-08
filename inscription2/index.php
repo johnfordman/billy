@@ -16,8 +16,7 @@ require('config.php')
 //On affiche un message de bienvenue, si lutilisateur est connecte, on affiche son pseudo
 ?>
         <p>
-Bonjour <?php if(isset($_SESSION['username'])){echo ' '.htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8');} ?>,<br />
- Bienvenue à toi jeune Sauveur !<br /></p>
+Bonjour <?php if(isset($_SESSION['username'])){echo ' '.htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8');} ?>,<br /></p>
 <!--Vous pouvez <a href="users.php">voir la liste des utilisateurs</a>.<br /><br />-->
 <?php
 //Si lutilisateur est connecte, on lui donne un lien pour modifier ses informations, pour voir ses messages et un pour se deconnecter
@@ -42,7 +41,6 @@ else
 <?php
 }
 ?>
-
     </div>
 </body>
 </html>
